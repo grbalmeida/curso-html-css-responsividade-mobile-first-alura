@@ -58,6 +58,50 @@
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" placeholder="Qual será sua próxima leitura?" class="banner__pesquisa" />
         </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos lançamentos</h2>
+            <!--<div class="carrossel__container">-->
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot da Alura Books" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Lideranca.svg" alt="Livro sobre liderança em design da Alura Books" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Javascript.svg" alt="Livro sobre Javascript assertivo da Alura Books" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/GuiaFrontEnd.svg" alt="Livro Guia Front End" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Portugol.svg" alt="Livro sobre Portugol" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade" />
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            <!--</div>-->
+        </section>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
     </body>
 
 </html>
